@@ -23,7 +23,7 @@ class NewsSubject:
         for observer, interests in list(self._subs.items()):
             if interests is not None and topic not in interests:
                 continue
-            obs.update(topic, data)
+            observer.update(topic, data)
 
 
 class LogObserver:
