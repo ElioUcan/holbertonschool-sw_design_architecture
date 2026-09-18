@@ -31,7 +31,7 @@ class LogObserver:
         print(f"log:{topic}={data}")
 
 
-class EmailObserver(SmsObserver):
+class EmailObserver:
     def update(self, topic: str, data: str) -> None:
         print(f"email:{topic}={data}")
 
